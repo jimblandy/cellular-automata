@@ -1,0 +1,30 @@
+* Outline
+
+- pre-talk: show code
+- title page
+- screen: glider, moving slowly across page
+  - glider: the photon of a simulated universe
+  - the rules real-world particles follow are difficult to solve, and random
+  - frustrating
+  - what's wonderful about the glider's universe:
+    - rules are *easy* but still *interesting*
+- screen: neighborhood; counts
+- rule: 
+
+* misc
+** Hashlife
+** von Neumann and his successors
+  - 
+  - note that Langston is sort of cheating, by dropping universality
+  - close with OK! All patterns in this rule replicate
+
+** Wireworld
+  This would be a good one to actually explain and work through in detail
+  eventually show [[file:///usr/share/golly/Patterns/WireWorld/primes.mc][primes]]
+
+** Misc patterns to show:
+- [[file:///usr/share/golly/Patterns/Life/Miscellaneous/Cambrian-Explosion.rle][Cambrian-Explosion.rle]]
+- Zig-zag Wick Stretcher - have this zoom in from below
+  file:///usr/share/golly/Patterns/Life/Puffers/zigzag-wickstretcher.rle
+- All two-glider collisions:
+  file:///usr/share/golly/Patterns/Life/Syntheses/two-glider-collisions.rle
