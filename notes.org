@@ -8,6 +8,7 @@
   - frustrating
   - what's wonderful about the glider's universe:
     - rules are *easy* but still *interesting*
+    - J. H. Conway's Life
 - screen: neighborhood; counts
 - rule: 
 

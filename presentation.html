@@ -22,16 +22,16 @@
 </head>
 <body class="list">
 	<header class="caption">
-		<h1>Cellular Automata</h1>
-		<p>Jim Blandy &lt;jimb@red-bean.com&gt;</p>
+	  <h1>Cellular Automata</h1>
+	  <p>Jim Blandy &lt;jimb@red-bean.com&gt;</p>
 	</header>
 
-<!-- 
-	
+<!--
+
 	Simply copy the whole block for each slide you want.
 	Special slides get extra classes. Each slide needs an ID 
 	to allow for bookmarking and target jumping.
-	
+
 	Images, videos and SVG objects are automatically centred.
 
 	If you add a "cover" class images are taking over the whole 
@@ -85,448 +85,288 @@ step(struct world *now, struct world *next) {
             }
         </style>
 	<div class="slide cover w" id="Cover"><div>
-		<section>
-			<header>
-				<h2>Cellular Automata</h2>
-			</header>
-			<footer class="byline">
-                          Jim Blandy &mdash; Mozilla
-                          <br>
-                          Portland, 2014
-                        </footer>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Glider</h2>
-			</header>
-                        <div>
-                          <a href="slow-glider.gollyscript">a single slow glider</a>
-                        </div>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Common Architecture</h2>
-			</header>
-                        <div>
-                          <object data="requirements.svg" type="image/svg+xml"
-                                  flipClass="common">
-                          </object>
-                        </div>
-
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Fennec (Firefox for Android)</h2>
-			</header>
-                        <div>
-                          <object data="requirements.svg" type="image/svg+xml"
-                                  flipClass="fennec">
-                          </object>
-                        </div>
-
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Desktop Content</h2>
-			</header>
-                        <div>
-                          <object data="requirements.svg" type="image/svg+xml"
-                                  flipClass="desktop">
-                          </object>
-                        </div>
-
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Firefox's Own Chrome</h2>
-			</header>
-                        <div>
-                          <object data="requirements.svg" type="image/svg+xml"
-                                  flipClass="chrome">
-                          </object>
-                        </div>
-
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Web Workers</h2>
-			</header>
-                        <div>
-                          <object data="requirements.svg" type="image/svg+xml"
-                                  flipClass="workers">
-                          </object>
-                        </div>
-
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Firefox OS</h2>
-			</header>
-                        <div>
-                          <object data="requirements.svg" type="image/svg+xml"
-                                  flipClass="FxOS">
-                          </object>
-                        </div>
-
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: a pristine JS world</h2>
-			</header>
-                        <div>
-                          <object data="debugger.svg" type="image/svg+xml"
-                                  flipIds="global">
-                          </object>
-                        </div>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: some code</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: compile to 'scripts'</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: create a function</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: eval a call</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater,eval1">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: in alertLater</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater,eval1,call1,call1env">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: anonymous function</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater,eval1,call1,call1env,anon">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: set timeout</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater,eval1,call1,call1env,anon,eventloop">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: call returns</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater,eval1,call1env,anon,eventloop">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: eval returns</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater,call1env,anon,eventloop">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: timeout fires</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater,call1env,anon,fire">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: show alert</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater,call1env,anon,fire,call2">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: non-values</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater,call1env,anon,fire,call2"
-                                flipStyleClass="nonvalue"
-                                flipStyle="fill:#c7c7c7;fill-opacity:1;stroke:none;display:inline">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: persons of interest</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater,call1env,anon,fire,call2">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: shadow objects</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater,call1env,anon,fire,call2,shadows">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: set of debuggees</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater,call1env,anon,fire,call2,debuggeeset">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: compartmentalization</h2>
-			</header>
-                        <object data="debugger.svg" type="image/svg+xml"
-                                flipIds="global,code,scripts,alertLater,call1env,anon,fire,call2,shadows">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>Debugger API: compartmentalization</h2>
-			</header>
-                        <object data="debugger-compartment.svg" type="image/svg+xml">
-                        </object>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
-		<section>
-			<header>
-			  <h2>Debugger API: Surviving JIT changes</h2>
-			</header>
-			<ul>
-			  <li>TraceMonkey: 2008-5 &mdash; 2011-11</li>
-                          <li>JägerMonkey: 2010-5 &mdash; 2013-4</li>
-                          <li>IonMonkey: 2011-5 &mdash; present</li>
-                          <li>Baseline: 2012-10 &mdash; present</li>
-                        </ul>
-		</section>
-	</div></div>
-
-	<div class="slide shout" id="Demo"><div>
-		<section>
-			<header>
-				<h2><a href="examples/index.htm" target="_blank">Demo</a></h2>
-			</header>
-		</section>
-	</div></div>
-
-	<div class="slide"><div>
 	    <section>
 	      <header>
-		<h2>Debugging Protocol</h2>
+		<h2>Cellular Automata</h2>
 	      </header>
-	      <ul>
-		<li>assumes a reliable JSON exchange</li>
-                <li>packets directed to / received from actors</li>
-                <li>variety of services:
-                  <ul>
-                    <li>debugging</li>
-                    <li>profiling</li>
-                    <li>app management</li>
-                  </ul>
-                </li>
-              </ul>
+	      <footer class="byline">
+                Jim Blandy &mdash; Mozilla
+                <br>
+                Portland, 2014
+              </footer>
 	    </section>
 	</div></div>
 
 	<div class="slide"><div>
 	    <section>
 	      <header>
-		<h2>Protocol: Actors</h2>
+		<h2>Glider</h2>
 	      </header>
-              <p>An actor is a server-side thingy that can receive and send packets.
-	      <ul>
-		<li>Every packet from the client has:
-                  <ul>
-                    <li>a <b>to</b> property naming the actor to which it is addressed</li>
-                    <li>a <b>type</b> property, naming the operation (think "method")</li>
-                  </ul>
-                <li>Every packet from the server has:
-                  <ul>
-                    <li>a <b>from</b> property naming the actor that sent it
-                  </ul>
-                </li>
-              </ul>
-              <p>Each actor is free to define whatever protocol suits its purpose.
+              <div>
+                <a href="slow-glider.gollyscript">a single slow glider</a>
+              </div>
 	    </section>
-	</div></div>
+	</div> </div>
 
-	<div class="slide"><div>
+	<div class="slide">
 	    <section>
 	      <header>
-		<h2>Protocol: The Root Actor</h2>
+		<h2>Life: Universe</h2>
 	      </header>
-              <p>The root actor introduces you to actors for other services:
-	      <ul>
-                <li><b>ThreadActor</b> (per-tab): debug a tab's content JS</li>
-                <li><b>chromeDebugger</b> (global): a JS debugging actor that targets browser chrome</li>
-                <li><b>consoleActor</b> (per-tab): web console</li>
-                <li><b>styleEditorActor</b> (per-tab): style editor tool</li>
-                <li><b>ProfilerActor</b> (global): ships BenWa's profiler data across the link</li>
-                <li><b>WebappsActor</b> (global): b2g installation: "install", "getAll", "launch", "close", "uninstall"</li>
-              </ul>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider">
+                </object>
+              </div>
 	    </section>
-	</div></div>
+	</div>
 
-	<div class="slide"><div>
+	<div class="slide">
 	    <section>
 	      <header>
-		<h2>Protocol: root actor example</h2>
+		<h2>Life: Universe</h2>
 	      </header>
-              <ul>
-                <li>The client sends:
-                  <pre>
-                    <code>{ "to": "root", "type": "listTabs" }</code>
-                  </pre>
-                </li>
-                <li>The root actor replies:
-                  <pre>
-                    <code>{ "from": "root", "selected": 0,</code>
-                    <code>  "tabs": [</code>
-                    <code>    { "actor": "conn0.TestTabActor2",</code>
-                    <code>      "title": "test-stack" }</code>
-                    <code>  ]</code>
-                    <code>}</code>
-                  </pre>
-                </li>
-              </ul>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider glider-ne">
+                </object>
+              </div>
 	    </section>
-	</div></div>
+	</div>
 
-	<div class="slide"><div>
-		<section>
-			<header>
-				<h2>References</h2>
-			</header>
-			<ul>
-			  <li>Debugger API specification:<br>
-                            <a href="http://wiki.mozilla.org/Debugger">http://wiki.mozilla.org/Debugger</a>
-                          </li>
-                          <li>Remote protocol specification:</br>
-                            <a href="http://wiki.mozilla.org/Remote_Debugging_Protocol">http://wiki.mozilla.org/Remote_Debugging_Protocol</a>
-                          </li>
-                          <li>Get in touch with me:
-                            <ul>
-                              <li>Jim Blandy &lt;jimb@mozilla.org&gt;</li>
-                              <li><b>jimb</b> on the <b>#devtools</b> channel on <b>irc.mozilla.org</b></li>
-                            </ul>
-                          </li>
-			</ul>
-		</section>
-	</div></div>
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider glider-ne glider-ne-nh">
+                </object>
+              </div>
+	    </section>
+	</div>
 
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider glider-ne glider-ne-nh-count">
+                </object>
+              </div>
+	    </section>
+	</div>
 
-	<div class="slide"><div>
-		<section>
-                        <object data="API-details.svg" type="image/svg+xml">
-                        </object>
-		</section>
-	</div></div>
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider glider-e">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider glider-e glider-e-nh">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider glider-e glider-e-nh-count">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider glider-c">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider glider-c glider-c-nh">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider glider-c glider-c-nh-count">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider glider-nn-nh-count">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider glider-nowhere-nh-count">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider all-counts">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider all-counts rule-live">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider all-counts rule-live rule-live-dying">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider all-counts rule-live rule-live-dying rule-empty">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid glider all-counts rule-live rule-live-dying rule-empty rule-empty-born">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid gen2">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid gen2 gen2-counts">
+                </object>
+              </div>
+	    </section>
+	</div>
+
+	<div class="slide">
+	    <section>
+	      <header>
+		<h2>Life: Universe</h2>
+	      </header>
+              <div>
+                <object data="life-rules.svg" type="image/svg+xml"
+                        inkscapeLayers="background grid gen3">
+                </object>
+              </div>
+	    </section>
+	</div>
 
 	<!--
 		To hide progress bar from entire presentation
@@ -534,6 +374,6 @@ step(struct world *now, struct world *next) {
 		-->
 	<div class="progress"><div></div></div>
 	<script src="shower/shower.js"></script>
-        <script src="flip.js" type="application/javascript;version=1.7"></script>
+        <script src="inkscape-layers.js" type="application/javascript;version=1.7"></script>
 </body>
 </html>
