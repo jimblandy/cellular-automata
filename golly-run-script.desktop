@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=GollyRunPython
-GenericName=Run a Python script in Golly
-Exec=golly-run-python
+Name=GollyRunScript
+GenericName=Run a Perl/Python script in Golly
+Exec=golly-run-script
 Icon=golly
 Terminal=false
 Type=Application
 Categories=GNOME;Game;LogicGame;
-MimeType=application/golly-python
+MimeType=application/golly-script

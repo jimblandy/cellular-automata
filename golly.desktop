@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Golly
+GenericName=Golly cellular automata simulator
+Exec=golly
+Icon=golly
+Terminal=false
+Type=Application
+Categories=GNOME;Game;LogicGame;
+MimeType=application/golly-macrocell;application/golly-extended-rle

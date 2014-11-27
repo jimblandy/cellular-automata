@@ -14,4 +14,4 @@ file=$( cd "$(dirname $1)" ; realpath "$file" )
 
 shift
 
-echo golly "$@" "$file"
+golly "$@" "$file"
