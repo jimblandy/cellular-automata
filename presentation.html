@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	<title>Cellular Automata 2014</title>
+	<title>Cellular Automata</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=1274, user-scalable=no">
 	<link rel="stylesheet" href="shower/themes/mozilla/styles/style.css">
@@ -14,14 +14,6 @@
                         margin: 0 0;
                         margin-bottom: 10px;
                 }
-                #Cover section {
-                        background:url(shower/themes/mozilla/images/bg-darkgrey-2.png)
-                }
-		#FitToWidth h2,
-		#FitToHeight h2 {
-			color:#fff;
-			text-align:center;
-		}
                 .slide object {
                         margin-left: 100px;
                 }
@@ -46,22 +38,69 @@
 	screen resized to height. Add a "w" class to resize to width.
 
  -->
-	<div class="slide" id="Cover"><div>
+	<div class="slide cover w" id="teaser"><div>
+            <style>
+                #teaser section {
+                        background:url(shower/themes/mozilla/images/bg-sandstone-2.png);
+                        padding: 40px 120px 0;
+                }
+                #teaser code {
+	                line-height: 1.2;
+                }
+                #teaser pre code:before {
+                        content:"";
+                }
+            </style>
+	    <section>
+              <pre>
+                <code>void
+step(struct world *now, struct world *next) {
+  int i, j;
+  for (i = 1; i < HEIGHT - 1; i++)
+    for (j = 1; j < WIDTH - 1; j++) {
+      int neighbors = 0;
+      int m, n;
+      for (m = -1; m <= 1; m++)
+        for (n = -1; n <= 1; n++)
+          if (m || n)
+            neighbors += now->cells[i + m][j + n];
+      if (now->cells[i][j])
+        next->cells[i][j] = (neighbors == 2 ||
+                             neighbors == 3);
+      else
+        next->cells[i][j] = neighbors == 3;
+    }
+}
+                </code>
+              </pre>
+	    </section>
+	</div></div>
+
+        <style>
+            #Cover section {
+                    background:url(Bloomerang.png)
+            }
+            #Cover h2 {
+                    color:#fff
+            }
+        </style>
+	<div class="slide cover w" id="Cover"><div>
 		<section>
 			<header>
-				<h2>Firefox's Debugging Architecture</h2>
+				<h2>Cellular Automata</h2>
 			</header>
-			<img src="shower/themes/mozilla/images/Fx-logo.png"
-                             width="40%" alt="">
-			<footer class="byline">Jim Blandy &mdash; Mozilla
-                          <br>JSTools 2013, Montpellier</footer>
+			<footer class="byline">
+                          Jim Blandy &mdash; Mozilla
+                          <br>
+                          Portland, 2014
+                        </footer>
 		</section>
 	</div></div>
 
 	<div class="slide"><div>
 		<section>
 			<header>
-				<h2>Debugging Requirements</h2>
+				<h2>Glider</h2>
 			</header>
 		</section>
 	</div></div>

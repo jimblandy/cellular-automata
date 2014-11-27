@@ -1,11 +1,15 @@
 <?xml version="1.0"?>
 <mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
-  <mime-type type="application/macrocell">
+  <mime-type type="application/golly-macrocell">
     <comment>Golly macrocell pattern file</comment>
     <glob pattern="*.mc"/>
   </mime-type>
   <mime-type type="application/golly-extended-rle">
     <comment>Golly Extended RLE pattern file</comment>
     <glob pattern="*.rle"/>
+  </mime-type>
+  <mime-type type="application/golly-script">
+    <comment>Golly Python/Perl Script</comment>
+    <glob pattern="*.gollyscript"/>
   </mime-type>
 </mime-info>

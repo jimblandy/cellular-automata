@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# A hack for making Golly run Python/Perl scripts directly from the browser.
+# Usage:
+#
+#   golly-run-script X.gollyscript [ARG ...]
+#
+# Run Golly, passing ARG ... followed by the file whose name is the contents of
+# X.gollyscript. The contents of X.gollyscript are always taken to be relative
+# to the X.gollyscript file itself.
+
+file=$(cat "$1")
+file=$( cd "$(dirname $1)" ; realpath "$file" )
+
+shift
+
+echo golly "$@" "$file"

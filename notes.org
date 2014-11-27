@@ -11,12 +11,18 @@
 - screen: neighborhood; counts
 - rule: 
 
-* misc
+* accum
 ** Hashlife
+  - Good demo [[file:///usr/share/golly/Patterns/HashLife/hashlife-oddity2.mc][HashLife Oddity 2]]
+    - modest beginning
+    - fast: let generation get up into 10**9 (step = 8^7 or so?)
+    - at 1.7e10:
+      - zoom in on NE-bound spike approaching center spine: it's incredibly sparse gliders
+      - zoom in on center spine: very regular, hence hashlife-friendly
 ** von Neumann and his successors
   - 
   - note that Langston is sort of cheating, by dropping universality
-  - close with OK! All patterns in this rule replicate
+  - close with [[http://www.conwaylife.com/wiki/Replicator_%28CA%29][Fredkin's replicator]], using [[file:///usr/share/golly/Patterns/Life-Like/replicator.rle][OK!]]: all patterns in this rule replicate.
 
 ** Wireworld
   This would be a good one to actually explain and work through in detail
