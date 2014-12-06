@@ -26,12 +26,12 @@
      inkscape:cx="325"
      inkscape:cy="200"
      inkscape:document-units="px"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="layer12"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1014"
      inkscape:window-x="0"
-     inkscape:window-y="867"
+     inkscape:window-y="27"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -90,7 +90,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="glider"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <path
        sodipodi:type="arc"
@@ -216,8 +216,7 @@
      inkscape:groupmode="layer"
      id="layer7"
      inkscape:label="glider-ne-nh-count"
-     style="display:none"
-     sodipodi:insensitive="true">
+     style="display:none">
     <path
        sodipodi:type="arc"
        style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline"
@@ -371,7 +370,7 @@
      inkscape:groupmode="layer"
      id="layer10"
      inkscape:label="glider-c"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <path
        sodipodi:type="arc"
@@ -438,7 +437,7 @@
      inkscape:groupmode="layer"
      id="layer11"
      inkscape:label="glider-c-nh"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <path
        style="fill:#ffffff;fill-opacity:0.37254902;stroke:none;display:inline"
@@ -450,7 +449,7 @@
      inkscape:groupmode="layer"
      id="layer12"
      inkscape:label="glider-c-nh-count"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <path
        sodipodi:type="arc"
@@ -1643,7 +1642,7 @@
      inkscape:groupmode="layer"
      id="layer22"
      inkscape:label="gen3"
-     style="display:inline">
+     style="display:none">
     <path
        sodipodi:type="arc"
        style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline"
