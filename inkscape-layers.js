@@ -1,5 +1,5 @@
 (function () {
-  window.addEventListener('DOMContentLoaded', makeInfallible(scan));
+  window.addEventListener('load', makeInfallible(scan));
 
   // Find all 'object' elements embedding SVG documents with a 'inkscapeLayers'
   // attribute, assume such SVG documents are Inkscape documents, and
@@ -12,18 +12,23 @@
   // marked with 'display:none' style attributes.
   function scan() {
     for (let object of iter(document.getElementsByTagName('object'))) {
-      var layersAttr = object.getAttribute('inkscapeLayers');
+      let layersAttr = object.getAttribute('inkscapeLayers');
       if (layersAttr) {
-        var layers = Set(layersAttr.split(' '));
+        let layers = Set(layersAttr.split(' '));
 
-        var svgDoc = object.contentDocument;
+        let svgDoc = object.contentDocument;
         clean(svgDoc);
 
+        let eltCount = 0;
         for (let elt of iter(svgDoc.querySelectorAll("[id^=layer]"))) {
+          eltCount++;
           elt.setAttribute('style', 'display:none');
           if (layers.has(elt.getAttribute('inkscape:label')))
             elt.setAttribute('style', 'display:inline');
         }
+        console.log("" + eltCount + " layer elements, inkscapeLayers = " + uneval(layersAttr));
+      } else {
+        console.log("no inkscapeLayers attribute");
       }
     }
   }
