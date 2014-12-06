@@ -19,16 +19,11 @@
         let svgDoc = object.contentDocument;
         clean(svgDoc);
 
-        let eltCount = 0;
         for (let elt of iter(svgDoc.querySelectorAll("[id^=layer]"))) {
-          eltCount++;
           elt.setAttribute('style', 'display:none');
           if (layers.has(elt.getAttribute('inkscape:label')))
             elt.setAttribute('style', 'display:inline');
         }
-        console.log("" + eltCount + " layer elements, inkscapeLayers = " + uneval(layersAttr));
-      } else {
-        console.log("no inkscapeLayers attribute");
       }
     }
   }
