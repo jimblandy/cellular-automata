@@ -14,7 +14,7 @@
     for (let object of iter(document.getElementsByTagName('object'))) {
       let layersAttr = object.getAttribute('inkscapeLayers');
       if (layersAttr) {
-        let layers = Set(layersAttr.split(' '));
+        let layers = new Set(layersAttr.split(' '));
 
         let svgDoc = object.contentDocument;
         clean(svgDoc);
